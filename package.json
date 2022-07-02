@@ -1,0 +1,36 @@
+{
+  "name": "kerdoc",
+  "version": "1.0.0",
+  "description": "Generate documents by code.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "kerdoc": "dist/cli.js"
+  },
+  "scripts": {
+    "prestart":"tsc -b",
+    "start": "node dist/cli.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KermanX/kerdoc.git"
+  },
+  "keywords": [
+    "document",
+    "generate"
+  ],
+  "author": "_Kerman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/KermanX/kerdoc/issues"
+  },
+  "homepage": "https://github.com/KermanX/kerdoc#readme",
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "typescript": "^4.7.4"
+  },
+  "dependencies": {
+    "playwright": "^1.23.1"
+  }
+}
