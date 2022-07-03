@@ -1,5 +1,5 @@
 import { chromium } from "playwright";
-import { PageSize } from "./size.js";
+import { PageSize } from "./pagesize.js";
 
 export async function genPDF(html: string, size?: PageSize): Promise<Buffer> {
   const browser = await chromium.launch();
@@ -8,7 +8,7 @@ export async function genPDF(html: string, size?: PageSize): Promise<Buffer> {
   await page.emulateMedia({ media: "screen" });
   const pdf = await page.pdf({
     width: size?.width,
-    height: size?.height
+    height: size?.height,
   });
   browser.close();
   return pdf;
