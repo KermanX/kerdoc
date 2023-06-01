@@ -28,7 +28,7 @@
   "homepage": "https://github.com/KermanX/kerdoc#readme",
   "devDependencies": {
     "@types/node": "18.0.0",
-    "typescript": "4.7.4"
+    "typescript": "5.1.3"
   },
   "dependencies": {
     "playwright": "^1.23.1"
